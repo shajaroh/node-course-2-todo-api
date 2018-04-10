@@ -4,7 +4,7 @@ const request = require('supertest');
 const {app} = require('./../server');
 const {Todo} = require('./../models/todo');
 
-//delete everything in database
+//delete everything in database for each case
 beforeEach((done) => {
     Todo.remove({}).then(() => {
         done();
